@@ -125,13 +125,13 @@ describe Exchanger do
       expect(coins).to eq({})
     end
 
-    it "raise exception when not coins don't sum up properly" do
-      expect { exchngr_1_5_10.exchange(12) }.to raise_error(ExcahngeError)
+    it "raise exception when coins don't sum up properly" do
+      expect { exchngr_1_5_10.exchange(12) }.to raise_error(ExchangeError)
     end
 
     it 'raise exception when not able to provide change' do
-      expect { exchngr_not_empty.exchange(100_007_6) }.to raise_error(ExcahngeError)
-      expect { exchngr_not_empty.exchange(-1) }.to raise_error(ExcahngeError)
+      expect { exchngr_not_empty.exchange(100_007_6) }.to raise_error(ExchangeError)
+      expect { exchngr_not_empty.exchange(-1) }.to raise_error(ExchangeError)
     end
   end
 end

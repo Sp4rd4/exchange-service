@@ -17,7 +17,7 @@ class Exchanger
       amount -= coins * k
       h[k] = coins
     end
-    raise ExcahngeError, 'Cannot provide change' if amount != 0
+    raise ExchangeError, 'Cannot provide change' if amount != 0
     coins ||= {}
     substract(coins)
     coins
@@ -47,5 +47,5 @@ class Exchanger
   end
 end
 
-class ExcahngeError < StandardError
+class ExchangeError < StandardError
 end
