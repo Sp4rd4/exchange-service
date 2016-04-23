@@ -47,6 +47,11 @@ GEM
     pry-byebug (3.3.0)
       byebug (~> 8.0)
       pry (~> 0.10)
+    pry-inline (1.0.2)
+      pry (~> 0.10.0)
+      unicode (~> 0.4.4)
+    pry-state (0.1.7)
+      pry (>= 0.9.10, < 0.11.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -96,6 +101,7 @@ GEM
       rack (~> 1.0)
     thor (0.19.1)
     tilt (2.0.2)
+    unicode (0.4.4.2)
     unicode-display_width (1.0.3)
 
 PLATFORMS
@@ -107,6 +113,8 @@ DEPENDENCIES
   guard-rubocop
   pry
   pry-byebug
+  pry-inline
+  pry-state
   rack
   rack-test
   rspec
